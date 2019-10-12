@@ -15,9 +15,15 @@ div {
 .base_color {
   background-color: red;
 }
+.base_color:hover {
+  background-color: purple;
+}
 
 .dark_1 {
   background-color: #cc0000;
+}
+.dark_1:hover {
+  background-color: #4d004d;
 }
 
 .dark_2 {

@@ -15,10 +15,17 @@ div{
 
 .base_color{
     background-color: $baseColor;
+
+    &:hover {
+        background-color: changeColor();
+    }
 }
 
 .dark_1{
     @include setDarkenColor(10);
+    &:hover{
+        @include changeColorToDark(10);
+    }
 }
 .dark_2{
     @include setDarkenColor(20);

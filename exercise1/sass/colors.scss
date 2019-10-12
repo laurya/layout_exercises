@@ -1,10 +1,21 @@
 
 $baseColor : red;
+$colorHover: purple;
+
 
 @mixin setDarkenColor ($numerOfDark:0){
-    background-color: darken($baseColor, $numerOfDark);
+    background-color: darken($baseColor,$numerOfDark);
 }
 
-@mixin setLightenColor ($numerOfDark:0){
-    background-color: lighten($baseColor, $numerOfDark);
+@mixin setLightenColor ($numerOfLight:0){
+    background-color: lighten($baseColor, $numerOfLight);
 }
+
+@function changeColor() {
+        $baseColor : purple;
+     @return $baseColor;
+ }
+
+ @mixin changeColorToDark($numDark){
+    background-color: darken(purple,$numDark);
+ }
