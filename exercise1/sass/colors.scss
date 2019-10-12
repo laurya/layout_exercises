@@ -1,0 +1,10 @@
+
+$baseColor : red;
+
+@mixin setDarkenColor ($numerOfDark:0){
+    background-color: darken($baseColor, $numerOfDark);
+}
+
+@mixin setLightenColor ($numerOfDark:0){
+    background-color: lighten($baseColor, $numerOfDark);
+}

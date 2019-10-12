@@ -1,0 +1,44 @@
+@import "colors.scss";
+
+body{
+    font-family: sans-serif;  
+    display: flex;
+    min-height: 100vh;
+}
+div{
+    width: 40%;
+    height: 15vh;
+    margin : 10px;
+    line-height: 15vh;
+    text-align: center;    
+}
+
+.base_color{
+    background-color: $baseColor;
+}
+
+.dark_1{
+    @include setDarkenColor(10);
+}
+.dark_2{
+    @include setDarkenColor(20);
+}
+.dark_3{
+    @include setDarkenColor(30);
+}
+.dark_4{
+    @include setDarkenColor(40);
+}
+
+.light_1{
+    @include setLightenColor(10)
+}
+.light_2{
+    @include setLightenColor(20)
+}
+.light_3{
+    @include setLightenColor(30)
+}
+.light_4{
+    @include setLightenColor(40)
+}

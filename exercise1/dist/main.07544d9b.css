@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+div {
+  width: 40%;
+  height: 15vh;
+  margin: 10px;
+  line-height: 15vh;
+  text-align: center;
+}
+
+.base_color {
+  background-color: red;
+}
+
+.dark_1 {
+  background-color: #cc0000;
+}
+
+.dark_2 {
+  background-color: #990000;
+}
+
+.dark_3 {
+  background-color: #660000;
+}
+
+.dark_4 {
+  background-color: #330000;
+}
+
+.light_1 {
+  background-color: #ff3333;
+}
+
+.light_2 {
+  background-color: #ff6666;
+}
+
+.light_3 {
+  background-color: #ff9999;
+}
+
+.light_4 {
+  background-color: #ffcccc;
+}
+
+/*# sourceMappingURL=/main.07544d9b.css.map */
