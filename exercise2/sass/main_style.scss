@@ -1,5 +1,5 @@
-@import "red_theme.scss";
-// @import "blue_theme.scss";
+//@import "red_theme.scss";
+@import "blue_theme.scss";
 
 @mixin resetDivs() {
     margin : 0;
@@ -17,6 +17,7 @@ body{
     
 }
 
+
 div{
     width: 10%;
     height: 15vh;
@@ -26,7 +27,6 @@ div{
    @include Bordes();
     
 }
-
 
 .fonts{
     @include resetDivs();

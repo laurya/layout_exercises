@@ -12,7 +12,7 @@ div {
   line-height: 15vh;
   text-align: center;
   border: 2px solid grey;
-  border-radius: 0px;
+  border-radius: 16px;
 }
 
 .fonts {
@@ -37,27 +37,27 @@ div {
 }
 
 .base {
-  background-color: red;
+  background-color: blue;
 }
 
 .important {
-  background-color: #990000;
+  background-color: #0000cc;
 }
 
 .warning {
-  background-color: #ff6666;
+  background-color: #6666ff;
 }
 
 .boxWithShadow {
-  box-shadow: -4px 10px 7px red;
+  box-shadow: -15px 10px 7px blue;
 }
 
 .principal {
-  font-family: sans-serif;
+  font-family: Helvetica;
 }
 
 .secondary {
-  font-family: Courier New;
+  font-family: Verdana;
 }
 
 .theme_red {
