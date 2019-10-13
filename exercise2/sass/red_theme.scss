@@ -1,0 +1,18 @@
+
+$baseColor : red;
+$importantColor : darken($baseColor,20);
+$warningColor : lighten($baseColor, 20);
+
+$fontPrimary : sans-serif;
+$fontSecondary : Courier New;
+
+
+@mixin Bordes (){
+    border: 2px solid grey;
+    border-radius: 0px;   
+}
+
+@mixin sombra(){
+    box-shadow:-4px 10px 7px $baseColor;
+
+}

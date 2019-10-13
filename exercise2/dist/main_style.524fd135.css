@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+div {
+  width: 10%;
+  height: 15vh;
+  margin: 0.2% 0 0 10%;
+  line-height: 15vh;
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 0px;
+}
+
+.fonts {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 3vh;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+.select_theme {
+  position: fixed;
+  width: 50px;
+  height: 100px;
+  top: 20%;
+}
+.select_theme div {
+  width: 25px;
+  height: 25px;
+  border: 1 solid black;
+}
+
+.base {
+  background-color: red;
+}
+
+.important {
+  background-color: #990000;
+}
+
+.warning {
+  background-color: #ff6666;
+}
+
+.boxWithShadow {
+  box-shadow: -4px 10px 7px red;
+}
+
+.principal {
+  font-family: sans-serif;
+}
+
+.secondary {
+  font-family: Courier New;
+}
+
+.theme_red {
+  background-color: red;
+}
+
+.theme_blue {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=/main_style.524fd135.css.map */

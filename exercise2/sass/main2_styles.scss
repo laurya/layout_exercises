@@ -1,0 +1,75 @@
+//@import "red_theme.scss";
+@import "blue_theme.scss";
+
+@mixin resetDivs() {
+    margin : 0;
+    padding: 0;
+    border: 0;
+    line-height: 3vh;  
+}
+
+body{
+    font-family: sans-serif;  
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+div{
+    width: 10%;
+    height: 15vh;
+    margin : 0.2% 0 0 10%;
+    line-height: 15vh;
+    text-align: center;
+    @include Bordes();
+    
+}
+
+.fonts{
+    @include resetDivs();
+    margin-top: 1%;
+    margin-left: 10%;
+}
+.select_theme{
+    position:fixed;
+    width: 50px;
+    height: 100px; 
+    top: 20%;
+
+    div{
+        width: 25px;
+        height: 25px;
+        border: 1 solid black;               
+    }
+}
+
+.base{
+    background-color: $baseColor;
+}
+
+.important{
+    background-color: $importantColor;
+}
+
+.warning{
+    background-color: $warningColor;
+}
+
+.boxWithShadow{
+    box-shadow:-4px 10px 7px $baseColor; 
+}
+
+.principal{
+    font-family: $fontPrimary;
+}
+
+.secondary{
+    font-family: $fontSecondary;
+}
+
+.theme_red{
+    background-color: red;
+}
+.theme_blue{
+    background-color: blue;
+}

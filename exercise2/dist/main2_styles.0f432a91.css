@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+div {
+  width: 10%;
+  height: 15vh;
+  margin: 0.2% 0 0 10%;
+  line-height: 15vh;
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 0px;
+}
+
+.fonts {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 3vh;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+.select_theme {
+  position: fixed;
+  width: 50px;
+  height: 100px;
+  top: 20%;
+}
+.select_theme div {
+  width: 25px;
+  height: 25px;
+  border: 1 solid black;
+}
+
+.base {
+  background-color: blue;
+}
+
+.important {
+  background-color: #000099;
+}
+
+.warning {
+  background-color: #6666ff;
+}
+
+.boxWithShadow {
+  box-shadow: -4px 10px 7px blue;
+}
+
+.principal {
+  font-family: Helvetica;
+}
+
+.secondary {
+  font-family: Verdana;
+}
+
+.theme_red {
+  background-color: red;
+}
+
+.theme_blue {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=/main2_styles.0f432a91.css.map */
