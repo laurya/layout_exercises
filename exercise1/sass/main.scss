@@ -28,21 +28,21 @@ div{
     }
 }
 .dark_2{
+    @include setDarkenColor(15);
+    &:hover{
+        @include changeColorToDark(15);
+    }
+}
+.dark_3{
     @include setDarkenColor(20);
     &:hover{
         @include changeColorToDark(20);
     }
 }
-.dark_3{
-    @include setDarkenColor(30);
-    &:hover{
-        @include changeColorToDark(30);
-    }
-}
 .dark_4{
-    @include setDarkenColor(40);
+    @include setDarkenColor(25);
     &:hover{
-        @include changeColorToDark(40);
+        @include changeColorToDark(25);
     }
 }
 

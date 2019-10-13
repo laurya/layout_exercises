@@ -16,63 +16,63 @@ div {
   background-color: red;
 }
 .base_color:hover {
-  background-color: green;
+  background-color: purple;
 }
 
 .dark_1 {
   background-color: #cc0000;
 }
 .dark_1:hover {
-  background-color: #004d00;
+  background-color: #4d004d;
 }
 
 .dark_2 {
-  background-color: #990000;
+  background-color: #b30000;
 }
 .dark_2:hover {
-  background-color: #001a00;
+  background-color: #340034;
 }
 
 .dark_3 {
-  background-color: #660000;
+  background-color: #990000;
 }
 .dark_3:hover {
-  background-color: black;
+  background-color: #1a001a;
 }
 
 .dark_4 {
-  background-color: #330000;
+  background-color: maroon;
 }
 .dark_4:hover {
-  background-color: black;
+  background-color: #010001;
 }
 
 .light_1 {
   background-color: #ff3333;
 }
 .light_1:hover {
-  background-color: #00b300;
+  background-color: #b300b3;
 }
 
 .light_2 {
   background-color: #ff6666;
 }
 .light_2:hover {
-  background-color: #00e600;
+  background-color: #e600e6;
 }
 
 .light_3 {
   background-color: #ff9999;
 }
 .light_3:hover {
-  background-color: #1aff1a;
+  background-color: #ff1aff;
 }
 
 .light_4 {
   background-color: #ffcccc;
 }
 .light_4:hover {
-  background-color: #4dff4d;
+  background-color: #ff4dff;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
