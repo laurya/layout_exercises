@@ -1,5 +1,5 @@
 @import "red_theme.scss";
-//@import "blue_theme.scss";
+// @import "blue_theme.scss";
 
 @mixin resetDivs() {
     margin : 0;
@@ -10,10 +10,10 @@
 
 body{
     font-family: sans-serif;  
-    display: flex;
+    display: inflex;
     min-height: 100vh;
     flex-direction: column;
-    justify-content: baseline;
+    
 }
 
 div{
@@ -22,8 +22,7 @@ div{
     margin : 0.2% 0 0 10%;
     line-height: 15vh;
     text-align: center;
-    border: 2px solid grey;
-    border-radius: 0px;
+   @include Bordes();
     
 }
 
@@ -59,7 +58,7 @@ div{
 }
 
 .boxWithShadow{
-    box-shadow:-4px 10px 7px $baseColor; 
+    @include sombra(); 
 }
 
 .principal{

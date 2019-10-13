@@ -1,9 +1,8 @@
 body {
   font-family: sans-serif;
-  display: flex;
+  display: inflex;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: baseline;
 }
 
 div {
