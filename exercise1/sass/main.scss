@@ -29,23 +29,44 @@ div{
 }
 .dark_2{
     @include setDarkenColor(20);
+    &:hover{
+        @include changeColorToDark(20);
+    }
 }
 .dark_3{
     @include setDarkenColor(30);
+    &:hover{
+        @include changeColorToDark(30);
+    }
 }
 .dark_4{
     @include setDarkenColor(40);
+    &:hover{
+        @include changeColorToDark(40);
+    }
 }
 
 .light_1{
-    @include setLightenColor(10)
+    @include setLightenColor(10);
+    &:hover{
+        @include changeColorToLight(10);
+    }
 }
 .light_2{
-    @include setLightenColor(20)
+    @include setLightenColor(20);
+    &:hover{
+        @include changeColorToLight(20);
+    }
 }
 .light_3{
-    @include setLightenColor(30)
+    @include setLightenColor(30);
+    &:hover{
+        @include changeColorToLight(30);
+    }
 }
 .light_4{
-    @include setLightenColor(40)
+    @include setLightenColor(40);
+    &:hover{
+        @include changeColorToLight(40);
+    }
 }
