@@ -15,12 +15,13 @@
     .menu{
         display: flex;
         flex-direction: column;
-        height: 100vh;
+       // height: 100vh;
         background-color: lime;
-        
+        flex-direction: row;
+        align-items: flex-end;
   
         .menu_item{
-            //flex-grow: 1;
+            flex-grow: 1;
         }
     }
   }

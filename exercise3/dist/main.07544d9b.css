@@ -25,8 +25,12 @@ body {
   .menu {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     background-color: lime;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .menu .menu_item {
+    flex-grow: 1;
   }
 }
 .menu_nav {
