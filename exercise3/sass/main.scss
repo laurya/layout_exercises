@@ -1,49 +1,50 @@
-.nav{
-    width: 960px;
-    height: 63px;
-   // background:url(images/fondo_menu.png) repeat-x;
+@import "resolutions.scss";
+
+body{
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+@media screen and (max-width: 70.9rem){
+  @include medium-resolution();
+}
+
+@media screen and (max-width: 43.9rem){
+   @include small-resolution();
+}
+
+.menu_nav{
    background-color: aqua;
   }
-  
-  ul.menu{
-    list-style-type:none;
-    width:880px;
-    margin: 0 auto;
-    padding:0px;
+
+  .menu{
+    display: flex;
+    list-style:none;
+    justify-content: flex-start;
+
+    li{
+      flex: 1;
+      text-decoration: none;
+      margin: 0.5%;
+      a:link{
+        text-decoration:none;
+        }
+    }
   }
-  
-  ul.menu li {
-    font-size:12px;
-    font-family:Arial, Helvetica, sans-serif;
-    line-height:63px;
-  }
-  
-  ul.menu li.divider {
-    width:5px;
-    height:63px;
-    float:left;
-    //background:url(images/menu_sep.png) no-repeat center;
-    background-color: lightpink;
-  }
-  
+   
   .top_header{
-      background-color: lightslategrey;
+      background-color: pink;
+      display: flex;
+      justify-content: space-around;
   }
 
-  ul.menu li a{
-    color:#FFF;
-    display:block;
-    float:left;
-    margin:0 14px;
-    height:35px;
-    text-decoration:none;
-    text-transform:uppercase;
-  }
-  
-  ul.menu li a span:hover, .current{
-    background:#ba122b;
-  }
-  
-  ul.menu li a span{
-    padding: 8px 7px 10px 7px;
+  .nav_top{
+    list-style: none;
   }

@@ -1,0 +1,26 @@
+@mixin medium-resolution {
+    .menu{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: lightgreen;
+  
+        .menu_item{
+            flex-grow: 1;
+        }
+    }
+  }
+
+  @mixin small-resolution {
+    .menu{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: lime;
+        
+  
+        .menu_item{
+            //flex-grow: 1;
+        }
+    }
+  }
