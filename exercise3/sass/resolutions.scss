@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: column;
         height: 100vh;
-        background-color: lightgreen;
+        //background-color: lightgreen;
   
         .menu_item{
             flex-grow: 1;
@@ -12,16 +12,21 @@
   }
 
   @mixin small-resolution {
-    .menu{
-        display: flex;
-        flex-direction: column;
-       // height: 100vh;
-        background-color: lime;
-        flex-direction: row;
-        align-items: flex-end;
-  
-        .menu_item{
-            flex-grow: 1;
+      body{
+          justify-content: flex-end;
+          .menu_nav{
+            font-size: 7px;
+          .menu{
+            display: flex;
+            flex-direction: row;           
+            height: 5vh;
+      
+            .menu_item{
+                flex-wrap: wrap;
+            }
         }
-    }
+      }
+      }
+      
+    
   }

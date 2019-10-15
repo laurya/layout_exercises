@@ -5,11 +5,18 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 20%;
   display: flex;
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
+}
+
+.top_header{
+  background-color: pink;
+  display: flex;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 70.9rem){
@@ -39,11 +46,7 @@ body{
     }
   }
    
-  .top_header{
-      background-color: pink;
-      display: flex;
-      justify-content: space-around;
-  }
+  
 
   .nav_top{
     list-style: none;
