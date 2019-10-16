@@ -13,9 +13,9 @@
     @include base-grid-definition();
 
     grid-template-areas: 
-        "header regular regular"
-        "header regular regular"
-        "header articles articles";
+        "header contentA contentA"
+        "header contentA contentA"
+        "header contentB contentB";
     
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1vh 30vh 30vh;;
@@ -25,8 +25,8 @@
     @include base-grid-definition();
     grid-template-areas:
         "header header header"
-        "articles articles info"
-        "regular regular regular"
+        "contentB contentB info"
+        "contentA contentA regular"
         "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10vh 40vh 40vh 10vh;

@@ -34,8 +34,8 @@ body {
   list-style: none;
 }
 
-.articles {
-  grid-area: articles;
+.contentB {
+  grid-area: contentB;
   background-color: green;
 }
 
@@ -49,8 +49,8 @@ body {
   background-color: yellow;
 }
 
-.regular {
-  grid-area: regular;
+.contentA {
+  grid-area: contentA;
   background-color: blue;
 }
 
@@ -59,7 +59,7 @@ body {
     display: grid;
     row-gap: 0.1rem;
     column-gap: 0.1rem;
-    grid-template-areas: "header regular regular" "header regular regular" "header articles articles";
+    grid-template-areas: "header contentA contentA" "header contentA contentA" "header contentB contentB";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1vh 30vh 30vh;
   }
@@ -74,7 +74,7 @@ body {
     display: grid;
     row-gap: 0.1rem;
     column-gap: 0.1rem;
-    grid-template-areas: "header header header" "articles articles info" "regular regular regular" "footer footer footer";
+    grid-template-areas: "header header header" "contentB contentB info" "contentA contentA regular" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10vh 40vh 40vh 10vh;
   }

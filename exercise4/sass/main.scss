@@ -22,8 +22,8 @@ body{
     list-style: none;
 }
 
-.articles{
-    grid-area: articles;
+.contentB{
+    grid-area: contentB;
     background-color: green;
 }
 
@@ -37,8 +37,8 @@ body{
     background-color: yellow;
 }
 
-.regular{
-    grid-area: regular;
+.contentA{
+    grid-area: contentA;
     background-color: blue;
 }
 
