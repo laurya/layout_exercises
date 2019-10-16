@@ -64,6 +64,7 @@
         height: 100vh;
         .header.main-content-item{
             flex-grow: 0;
+            justify-content: space-around;
         }
         .main-content-item{
             flex-grow: 1;
