@@ -1,7 +1,7 @@
 @mixin base-grid-definition{
     display: grid;
-    row-gap: 0.5rem;
-    column-gap: 0.5rem;
+    row-gap: 0.1rem;
+    column-gap: 0.1rem;
 }
 
 @mixin full-resolution{
@@ -17,7 +17,7 @@
         "header regular regular"
         "header articles articles";
     
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1vh 30vh 30vh;;
 }
 
