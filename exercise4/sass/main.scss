@@ -45,7 +45,7 @@ body{
     }
 }
 
-@media screen and (min-width: 65rem) and (max-width: 89.9rem){
+@media screen and (min-width: 60rem) and (max-width: 89.9rem){
     .main-display{
         left: 4%;
         right: 4%;
@@ -56,12 +56,12 @@ body{
     }
 }
 
-@media screen and (max-width: 64.9rem) and (min-width: 48rem){
+@media screen and (max-width: 59.9rem) and (min-width: 41rem){
     .main-content{
         @include medium();
     }
 }
 
-@media screen and (max-width: 47.9rem){
+@media screen and (max-width: 40.9rem){
         @include small();
 }
