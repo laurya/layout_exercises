@@ -39,22 +39,16 @@ body {
   background-color: green;
 }
 
-.info {
-  grid-area: info;
-  background-color: cyan;
-}
-
-.footer {
-  grid-area: footer;
-  background-color: yellow;
-}
-
 .contentA {
   grid-area: contentA;
   background-color: blue;
 }
 
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 77rem) {
+  .main-display {
+    margin: 0% 5% 0% 5%;
+  }
+
   .main-content {
     display: grid;
     row-gap: 0.1rem;
@@ -69,14 +63,32 @@ body {
     justify-content: space-around;
   }
 }
-@media screen and (max-width: 74.9rem) and (min-width: 48rem) {
+@media screen and (min-width: 65rem) and (max-width: 76.9rem) {
   .main-content {
     display: grid;
     row-gap: 0.1rem;
     column-gap: 0.1rem;
-    grid-template-areas: "header header header" "contentB contentB info" "contentA contentA regular" "footer footer footer";
+    grid-template-areas: "header contentA contentA" "header contentA contentA" "header contentB contentB";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 40vh 40vh 10vh;
+    grid-template-rows: 1vh 30vh 30vh;
+  }
+  .main-content .header.main-content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .main-content .contentA.main-content-item {
+    background-color: red;
+  }
+}
+@media screen and (max-width: 64.9rem) and (min-width: 48rem) {
+  .main-content {
+    display: grid;
+    row-gap: 0.1rem;
+    column-gap: 0.1rem;
+    grid-template-areas: "header header header" "contentB contentB contentB" "contentA contentA contentA";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 40vh 40vh;
   }
 }
 @media screen and (max-width: 47.9rem) {

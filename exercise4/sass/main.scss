@@ -27,33 +27,33 @@ body{
     background-color: green;
 }
 
-.info{
-    grid-area: info;
-    background-color: cyan;
-}
-
-.footer{
-    grid-area: footer;
-    background-color: yellow;
-}
 
 .contentA{
     grid-area: contentA;
     background-color: blue;
 }
 
-@media screen and (min-width: 75rem){
+@media screen and (min-width: 77rem){
+    .main-display{
+        margin: 0% 5% 0% 5%;
+    }
     .main-content{
-        @include full-resolution();
+        @include extra-large();
     }
 }
 
-@media screen and (max-width: 74.9rem) and (min-width: 48rem){
+@media screen and (min-width: 65rem) and (max-width: 76.9rem){
     .main-content{
-        @include medium-resolution();
+        @include large();
+    }
+}
+
+@media screen and (max-width: 64.9rem) and (min-width: 48rem){
+    .main-content{
+        @include medium();
     }
 }
 
 @media screen and (max-width: 47.9rem){
-        @include small-resolution();
+        @include small();
 }
