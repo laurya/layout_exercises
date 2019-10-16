@@ -42,13 +42,19 @@
 }
 
 @mixin medium {
+    .header.main-content-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
     @include base-grid-definition();
     grid-template-areas:
         "header header header"
         "contentB contentB contentB"
         "contentA contentA contentA";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 40vh 40vh;
+    grid-template-rows: 19vh 40vh 40vh;
  }
 
  @mixin small {

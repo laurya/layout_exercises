@@ -44,9 +44,12 @@ body {
   background-color: blue;
 }
 
-@media screen and (min-width: 77rem) {
+@media screen and (min-width: 90rem) {
   .main-display {
-    margin: 0% 5% 0% 5%;
+    height: 100vh;
+    left: 8%;
+    right: 8%;
+    position: absolute;
   }
 
   .main-content {
@@ -63,7 +66,13 @@ body {
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 65rem) and (max-width: 76.9rem) {
+@media screen and (min-width: 65rem) and (max-width: 89.9rem) {
+  .main-display {
+    left: 4%;
+    right: 4%;
+    position: absolute;
+  }
+
   .main-content {
     display: grid;
     row-gap: 0.1rem;
@@ -88,7 +97,13 @@ body {
     column-gap: 0.1rem;
     grid-template-areas: "header header header" "contentB contentB contentB" "contentA contentA contentA";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 40vh 40vh;
+    grid-template-rows: 19vh 40vh 40vh;
+  }
+  .main-content .header.main-content-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 @media screen and (max-width: 47.9rem) {
