@@ -1,0 +1,41 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add sass -D
+
+PATH: 
+  C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\lbojfuen\Desktop\layout_exercises\exercise4\node_modules\.bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Ruby25-x64\bin;C:\Users\lbojfuen\AppData\Local\Microsoft\WindowsApps;C:\Users\lbojfuen\AppData\Roaming\npm;C:\Users\lbojfuen\AppData\Local\atom\bin;C:\Users\lbojfuen\AppData\Local\Yarn\bin;C:\Users\lbojfuen\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lbojfuen\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\lbojfuen\Desktop\layout_exercises\exercise4\node_modules\deasync\bin\win32-x64-node-10\deasync.node'
+
+npm manifest: 
+  {
+    "name": "exercise4",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "parcel index.html",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "parcel": "^1.12.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

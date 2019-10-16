@@ -1,0 +1,83 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-display {
+  flex-grow: 1;
+}
+
+.header {
+  grid-area: header;
+  background-color: pink;
+}
+
+.articles {
+  grid-area: articles;
+  background-color: green;
+}
+
+.info {
+  grid-area: info;
+  background-color: cyan;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: yellow;
+}
+
+.regular {
+  grid-area: regular;
+  background-color: blue;
+}
+
+@media screen and (min-width: 75rem) {
+  .main-content {
+    display: grid;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    grid-template-areas: "header header header header" "regular articles articles info" "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+  }
+}
+@media screen and (max-width: 74.9rem) and (min-width: 48rem) {
+  .main-content {
+    display: grid;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    grid-template-areas: "header header header" "articles articles info" "regular regular regular" "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 40vh 40vh 10vh;
+  }
+}
+@media screen and (max-width: 47.9rem) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .main-content .main-content-item {
+    flex-grow: 1;
+  }
+}
+
+/*# sourceMappingURL=/main.07544d9b.css.map */
