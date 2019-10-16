@@ -5,6 +5,11 @@
 }
 
 @mixin full-resolution{
+    .header.main-content-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     @include base-grid-definition();
 
     grid-template-areas: 

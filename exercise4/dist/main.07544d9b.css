@@ -31,6 +31,7 @@ body {
 .header {
   grid-area: header;
   background-color: pink;
+  list-style: none;
 }
 
 .articles {
@@ -61,6 +62,11 @@ body {
     grid-template-areas: "header regular regular" "header regular regular" "header articles articles";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1vh 30vh 30vh;
+  }
+  .main-content .header.main-content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
 @media screen and (max-width: 74.9rem) and (min-width: 48rem) {
