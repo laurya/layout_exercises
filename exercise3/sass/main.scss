@@ -11,7 +11,13 @@ body{
   padding: 0;
   border: 0;
   outline: 0;
+
+  nav{
+    display: flex;
+  }
 }
+
+
 
 .top_header{
   background-color: pink;
@@ -19,9 +25,9 @@ body{
   justify-content: space-around;
 }
 
-@media screen and (max-width: 70.9rem){
-  @include medium-resolution();
-}
+// @media screen and (max-width: 70.9rem){
+//   @include medium-resolution();
+// }
 
 @media screen and (max-width: 43.9rem){
    @include small-resolution();
@@ -29,9 +35,9 @@ body{
 
 .menu_nav{
    background-color: aqua;
-  }
+   flex-direction: column;
 
-  .menu{
+   .menu{
     display: flex;
     list-style:none;
     justify-content: flex-start;
@@ -43,10 +49,9 @@ body{
       a:link{
         text-decoration:none;
         }
+      }
     }
   }
-   
-  
 
   .nav_top{
     list-style: none;
