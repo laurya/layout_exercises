@@ -27,9 +27,9 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    .contentA.main-content-item{
-        background-color: red;
-    }
+    // .contentA.main-content-item{
+    //     background-color: red;
+    // }
     @include base-grid-definition();
 
     grid-template-areas: 
