@@ -4,6 +4,7 @@ body{
     font-family: sans-serif;  
     display: flex;
     min-height: 100vh;
+    //flex-wrap: wrap;
 }
 div{
     width: 40%;
@@ -11,6 +12,7 @@ div{
     margin : 10px;
     line-height: 15vh;
     text-align: center;    
+    
 }
 
 .base_color{
