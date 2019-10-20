@@ -1,4 +1,4 @@
-//@import "red_theme.scss";
+@import "red_theme.scss";
 @import "blue_theme.scss";
 
 @mixin resetDivs() {
@@ -8,31 +8,59 @@
     line-height: 3vh;  
 }
 
+@mixin sizeSectionsColors(){
+    width: 35%;
+    height: 100%;
+    margin : 1.2% 0 0 10%;
+    line-height: 15vh;
+    text-align: center; 
+}
+
+@mixin sizeToFonts(){
+    margin-top: 1%;
+    margin-left: 10%;
+}
 
 body{
     font-family: sans-serif;  
-    display: inflex;
-    min-height: 100vh;
-    flex-direction: column;
-    
+    display: flex;
+    min-height: 100%;
+    flex-direction: row;   
+    border: 0; 
+    justify-content: flex-start;
 }
 
-
 div{
-    width: 10%;
+    width: 33%;
     height: 15vh;
     margin : 0.2% 0 0 10%;
     line-height: 15vh;
     text-align: center;
-   @include Bordes();
-    
+   
 }
 
-.fonts{
-    @include resetDivs();
-    margin-top: 1%;
-    margin-left: 10%;
+.seccRed{
+     @include sizeSectionsColors();
+    div{
+        @include Bordes(); 
+    }
+    .fonts{
+        @include resetDivs();
+        @include sizeToFonts();
+    }
 }
+
+.seccBlue{
+    @include sizeSectionsColors();
+    div{
+        @include Bordes2();
+    }  
+    .fonts2{
+    @include resetDivs();
+    @include sizeToFonts();
+}
+}
+
 .select_theme{
     position:fixed;
     width: 50px;
@@ -44,30 +72,6 @@ div{
         height: 25px;
         border: 1 solid black;               
     }
-}
-
-.base{
-    background-color: $baseColor;
-}
-
-.important{
-    background-color: $importantColor;
-}
-
-.warning{
-    background-color: $warningColor;
-}
-
-.boxWithShadow{
-    @include sombra(); 
-}
-
-.principal{
-    font-family: $fontPrimary;
-}
-
-.secondary{
-    font-family: $fontSecondary;
 }
 
 .theme_red{

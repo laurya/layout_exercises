@@ -1,18 +1,42 @@
 
-$baseColor : blue;
-$importantColor : darken($baseColor,10);
-$warningColor : lighten($baseColor, 20);
+$baseColor2 : blue;
+$importantColor2 : darken($baseColor2,10);
+$warningColor2 : lighten($baseColor2, 20);
 
-$fontPrimary :  Helvetica;
-$fontSecondary : Verdana;
+$fontPrimary2 :  Helvetica;
+$fontSecondary2 : Verdana;
 
 
-@mixin Bordes (){
+@mixin Bordes2 (){
     border: 2px solid grey;
     border-radius: 16px;
 }
 
-@mixin sombra(){
-    box-shadow:-15px 10px 7px $baseColor;
+@mixin sombra2(){
+    box-shadow:18px 20px 7px $baseColor2;
 
+}
+
+.base2{
+    background-color: $baseColor2;
+}
+
+.important2{
+    background-color: $importantColor2;
+}
+
+.warning2{
+    background-color: $warningColor2;
+}
+
+.boxWithShadow2{
+    @include sombra2(); 
+}
+
+.principal2{
+    font-family: $fontPrimary2;
+}
+
+.secondary2{
+    font-family: $fontSecondary2;
 }

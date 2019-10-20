@@ -13,6 +13,33 @@ $fontSecondary : Courier New;
 }
 
 @mixin sombra(){
-    box-shadow:-4px 10px 7px $baseColor;
+    box-shadow:-15px 16px 7px $baseColor;
 
 }
+
+
+
+.base{
+    background-color: $baseColor;
+}
+
+.important{
+    background-color: $importantColor;
+}
+
+.warning{
+    background-color: $warningColor;
+}
+
+.boxWithShadow{
+    @include sombra(); 
+}
+
+.principal{
+    font-family: $fontPrimary;
+}
+
+.secondary{
+    font-family: $fontSecondary;
+}
+
