@@ -23,29 +23,31 @@ body{
   justify-content: space-around;
 }
 
-// @media screen and (max-width: 70.9rem){
-//   @include medium-resolution();
-// }
-
 @media screen and (max-width: 43.9rem){
    @include small-resolution();
 }
 
 .menu_nav{
-   background-color: aqua;
+   background-color: lightslategray;
    flex-direction: column;
 
-   .menu{
+    ul.menu{
     display: flex;
     list-style:none;
-    justify-content: flex-start;
-
+    justify-content: center;
+    
     li{
       flex: 1;
       text-decoration: none;
       margin: 0.5%;
+      border-right: 1px solid #7C7C7C;
       a:link{
         text-decoration:none;
+        }
+        &:hover {
+          background-color: #7C7C7C;
+          margin-top:-2px;
+
         }
       }
     }

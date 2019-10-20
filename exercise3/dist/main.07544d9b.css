@@ -37,21 +37,26 @@ body nav {
   }
 }
 .menu_nav {
-  background-color: aqua;
+  background-color: lightslategray;
   flex-direction: column;
 }
-.menu_nav .menu {
+.menu_nav ul.menu {
   display: flex;
   list-style: none;
-  justify-content: flex-start;
+  justify-content: center;
 }
-.menu_nav .menu li {
+.menu_nav ul.menu li {
   flex: 1;
   text-decoration: none;
   margin: 0.5%;
+  border-right: 1px solid #7C7C7C;
 }
-.menu_nav .menu li a:link {
+.menu_nav ul.menu li a:link {
   text-decoration: none;
+}
+.menu_nav ul.menu li:hover {
+  background-color: #7C7C7C;
+  margin-top: -2px;
 }
 
 .nav_top {
