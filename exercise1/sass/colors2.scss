@@ -1,0 +1,83 @@
+$base2Color : green;
+$hover2Color : orange;
+
+
+@mixin setDarkenColor2 ($numerOfDark:0){
+    background-color: darken($base2Color,$numerOfDark);
+}
+
+@mixin setLightenColor2 ($numerOfLight:0){
+    background-color: lighten($base2Color, $numerOfLight);
+}
+
+@function changeColor2() {
+        
+     @return $hover2Color;
+ }
+
+
+ @mixin changeColorToDark2($numDark){
+    background-color: darken($hover2Color,$numDark);
+ }
+
+ @mixin changeColorToLight2($numLight){
+    background-color: lighten($hover2Color,$numLight);
+ }
+
+ .base_color_2{
+    background-color: $base2Color;
+
+    &:hover {
+        background-color: changeColor2();
+    }
+}
+
+.dark_2_1{
+    @include setDarkenColor2(10);
+    &:hover{
+        @include changeColorToDark2(10);
+    }
+}
+.dark_2_2{
+    @include setDarkenColor2(15);
+    &:hover{
+        @include changeColorToDark2(15);
+    }
+}
+.dark_2_3{
+    @include setDarkenColor2(20);
+    &:hover{
+        @include changeColorToDark2(20);
+    }
+}
+.dark_2_4{
+    @include setDarkenColor2(25);
+    &:hover{
+        @include changeColorToDark2(25);
+    }
+}
+
+.light_2_1{
+    @include setLightenColor2(10);
+    &:hover{
+        @include changeColorToLight2(10);
+    }
+}
+.light_2_2{
+    @include setLightenColor2(20);
+    &:hover{
+        @include changeColorToLight2(20);
+    }
+}
+.light_2_3{
+    @include setLightenColor2(30);
+    &:hover{
+        @include changeColorToLight2(30);
+    }
+}
+.light_2_4{
+    @include setLightenColor2(40);
+    &:hover{
+        @include changeColorToLight2(40);
+    }
+}

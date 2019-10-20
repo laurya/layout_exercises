@@ -1,0 +1,83 @@
+$base3Color : blue;
+$hover3Color : rgb(217, 248, 42);
+
+
+@mixin setDarkenColor3 ($numerOfDark:0){
+    background-color: darken($base3Color,$numerOfDark);
+}
+
+@mixin setLightenColor3 ($numerOfLight:0){
+    background-color: lighten($base3Color, $numerOfLight);
+}
+
+@function changeColor3() {
+        
+     @return $hover3Color;
+ }
+
+
+ @mixin changeColorToDark3($numDark){
+    background-color: darken($hover3Color,$numDark);
+ }
+
+ @mixin changeColorToLight3($numLight){
+    background-color: lighten($hover3Color,$numLight);
+ }
+
+ .base_color_3{
+    background-color: $base3Color;
+
+    &:hover {
+        background-color: changeColor3();
+    }
+}
+
+.dark_3_1{
+    @include setDarkenColor3(10);
+    &:hover{
+        @include changeColorToDark3(10);
+    }
+}
+.dark_3_2{
+    @include setDarkenColor3(15);
+    &:hover{
+        @include changeColorToDark3(15);
+    }
+}
+.dark_3_3{
+    @include setDarkenColor3(20);
+    &:hover{
+        @include changeColorToDark3(20);
+    }
+}
+.dark_3_4{
+    @include setDarkenColor3(25);
+    &:hover{
+        @include changeColorToDark3(25);
+    }
+}
+
+.light_3_1{
+    @include setLightenColor3(10);
+    &:hover{
+        @include changeColorToLight3(10);
+    }
+}
+.light_3_2{
+    @include setLightenColor3(20);
+    &:hover{
+        @include changeColorToLight3(20);
+    }
+}
+.light_3_3{
+    @include setLightenColor3(30);
+    &:hover{
+        @include changeColorToLight3(30);
+    }
+}
+.light_3_4{
+    @include setLightenColor3(40);
+    &:hover{
+        @include changeColorToLight3(40);
+    }
+}
