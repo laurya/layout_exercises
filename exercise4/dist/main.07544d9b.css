@@ -86,9 +86,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
   }
-  .main-content .contentA.main-content-item {
-    background-color: red;
-  }
 }
 @media screen and (max-width: 59.9rem) and (min-width: 41rem) {
   .main-content {
