@@ -10,6 +10,9 @@ body {
   border: 0;
   outline: 0;
 }
+body nav {
+  display: flex;
+}
 
 .top_header {
   background-color: pink;
@@ -17,47 +20,37 @@ body {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 70.9rem) {
-  .menu {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  .menu .menu_item {
-    flex-grow: 1;
-  }
-}
 @media screen and (max-width: 43.9rem) {
   body {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   body .menu_nav {
-    font-size: 7px;
+    align-items: center;
+    font-size: 9px;
+    order: 2;
+    height: 100%;
+    position: relative;
   }
-  body .menu_nav .menu {
+  body .menu_nav ul .menu {
     display: flex;
     flex-direction: row;
-    height: 5vh;
-  }
-  body .menu_nav .menu .menu_item {
-    flex-wrap: wrap;
   }
 }
 .menu_nav {
   background-color: aqua;
+  flex-direction: column;
 }
-
-.menu {
+.menu_nav .menu {
   display: flex;
   list-style: none;
   justify-content: flex-start;
 }
-.menu li {
+.menu_nav .menu li {
   flex: 1;
   text-decoration: none;
   margin: 0.5%;
 }
-.menu li a:link {
+.menu_nav .menu li a:link {
   text-decoration: none;
 }
 

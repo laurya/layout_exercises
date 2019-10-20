@@ -5,15 +5,83 @@
 body{
     font-family: sans-serif;  
     display: flex;
+<<<<<<< HEAD
     min-height: 100%;
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap
+=======
+    min-height: 100vh;
+    //flex-wrap: wrap;
+>>>>>>> bf9fc50597639afe9c0988546368c35150ac2770
 }
 div{
     width: 9%;
     height: 12%;
     margin : 10px;
     line-height: 15vh;
+<<<<<<< HEAD
     text-align: center;  
+=======
+    text-align: center;    
+    
+}
+
+.base_color{
+    background-color: $baseColor;
+
+    &:hover {
+        background-color: changeColor();
+    }
+}
+
+.dark_1{
+    @include setDarkenColor(10);
+    &:hover{
+        @include changeColorToDark(10);
+    }
+}
+.dark_2{
+    @include setDarkenColor(15);
+    &:hover{
+        @include changeColorToDark(15);
+    }
+}
+.dark_3{
+    @include setDarkenColor(20);
+    &:hover{
+        @include changeColorToDark(20);
+    }
+}
+.dark_4{
+    @include setDarkenColor(25);
+    &:hover{
+        @include changeColorToDark(25);
+    }
+}
+
+.light_1{
+    @include setLightenColor(10);
+    &:hover{
+        @include changeColorToLight(10);
+    }
+}
+.light_2{
+    @include setLightenColor(20);
+    &:hover{
+        @include changeColorToLight(20);
+    }
+}
+.light_3{
+    @include setLightenColor(30);
+    &:hover{
+        @include changeColorToLight(30);
+    }
+}
+.light_4{
+    @include setLightenColor(40);
+    &:hover{
+        @include changeColorToLight(40);
+    }
+>>>>>>> bf9fc50597639afe9c0988546368c35150ac2770
 }

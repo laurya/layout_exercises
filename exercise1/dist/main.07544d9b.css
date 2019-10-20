@@ -2,63 +2,63 @@
   background-color: red;
 }
 .base_color:hover {
-  background-color: purple;
+  background-color: green;
 }
 
 .dark_1 {
   background-color: #cc0000;
 }
 .dark_1:hover {
-  background-color: #4d004d;
+  background-color: #004d00;
 }
 
 .dark_2 {
   background-color: #b30000;
 }
 .dark_2:hover {
-  background-color: #340034;
+  background-color: #003400;
 }
 
 .dark_3 {
   background-color: #990000;
 }
 .dark_3:hover {
-  background-color: #1a001a;
+  background-color: #001a00;
 }
 
 .dark_4 {
   background-color: maroon;
 }
 .dark_4:hover {
-  background-color: #010001;
+  background-color: #000100;
 }
 
 .light_1 {
   background-color: #ff3333;
 }
 .light_1:hover {
-  background-color: #b300b3;
+  background-color: #00b300;
 }
 
 .light_2 {
   background-color: #ff6666;
 }
 .light_2:hover {
-  background-color: #e600e6;
+  background-color: #00e600;
 }
 
 .light_3 {
   background-color: #ff9999;
 }
 .light_3:hover {
-  background-color: #ff1aff;
+  background-color: #1aff1a;
 }
 
 .light_4 {
   background-color: #ffcccc;
 }
 .light_4:hover {
-  background-color: #ff4dff;
+  background-color: #4dff4d;
 }
 
 .base_color_2 {

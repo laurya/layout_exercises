@@ -1,32 +1,32 @@
-@mixin medium-resolution {
-    .menu{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        //background-color: lightgreen;
-  
-        .menu_item{
-            flex-grow: 1;
-        }
-    }
-  }
 
   @mixin small-resolution {
-      body{
-          justify-content: flex-end;
-          .menu_nav{
-            font-size: 7px;
-          .menu{
-            display: flex;
-            flex-direction: row;           
-            height: 5vh;
-      
-            .menu_item{
-                flex-wrap: wrap;
-            }
-        }
+      body{    
+        justify-content: space-between;   
+            .menu_nav{
+                align-items:center; 
+                font-size: 9px;
+                order: 2;
+                height: 100%;
+                position: relative;
+                ul{
+                    .menu{
+                    display: flex;
+                    flex-direction: row;           
+                    }
+                }
       }
       }
-      
-    
   }
+
+//   @mixin medium-resolution {
+//     .menu{
+//         display: flex;
+//         flex-direction: column;
+//         height: 100vh;
+//         //background-color: lightgreen;
+  
+//         .menu_item{
+//             flex-grow: 1;
+//         }
+//     }
+//   }

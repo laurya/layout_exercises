@@ -1,0 +1,67 @@
+@import "init.scss";
+@import "layout.scss";
+
+body{
+    font-family: sans-serif;
+    display: grid;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-display{
+    flex-grow: 1;
+}
+
+.main-content-item{
+    display: flex;
+}
+
+.header{
+    grid-area: header;
+    background-color: pink;
+    list-style: none;
+}
+
+.contentB{
+    grid-area: contentB;
+    background-color: green;
+}
+
+
+.contentA{
+    grid-area: contentA;
+    background-color: blue;
+}
+
+@media screen and (min-width: 90rem){
+    .main-display{
+        height: 100vh;
+        left: 8%;
+        right: 8%;
+        position: absolute;
+    }
+    .main-content{
+        @include extra-large();
+    }
+}
+
+@media screen and (min-width: 60rem) and (max-width: 89.9rem){
+    .main-display{
+        left: 4%;
+        right: 4%;
+        position: absolute;
+    }
+    .main-content{
+        @include large();
+    }
+}
+
+@media screen and (max-width: 59.9rem) and (min-width: 41rem){
+    .main-content{
+        @include medium();
+    }
+}
+
+@media screen and (max-width: 40.9rem){
+        @include small();
+}
